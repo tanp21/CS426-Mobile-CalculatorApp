@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="circle_button_text_color" tools:ignore="DuplicateDefinition">#FFFFFFFF</color>
+    <color name="light_gray">#D4D4D2</color>
+    <color name="eerie_black">#1C1C1C</color>
+    <color name="dark_liver">#505050</color>
+    <color name="vivid_gamboge">#FF9500</color>
 </resources>

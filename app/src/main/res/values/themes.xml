@@ -1,9 +1,38 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.CalculatorApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.CalculatorApp" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.CalculatorApp" parent="Base.Theme.CalculatorApp" />
+
+    <style name="BaseCircularButton">
+        <item name="android:layout_width">85dp</item> <item name="android:layout_height">85dp</item> <item name="android:textColor">@color/circle_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">8dp</item> <item name="android:layout_margin">4dp</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="CircularButton.Dark" parent="BaseCircularButton">
+        <item name="android:background">@drawable/dark_button</item>
+        <!-- For MaterialButton, instead of android:background, you might use backgroundTint
+             but for full shape control with an oval drawable, android:background is fine.
+             If using MaterialButton with shapeAppearanceOverlay:
+             <item name="backgroundTint">@color/circle_button_color_type1</item>
+        -->
+    </style>
+
+    <style name="CircularButton.DarkGray" parent="BaseCircularButton">
+        <item name="android:background">@drawable/dark_gray_button</item>
+    </style>
+
+    <style name="CircularButton.LightGray" parent="BaseCircularButton">
+        <item name="android:background">@drawable/light_gray_button</item>
+    </style>
+
+    <style name="CircularButton.Orange" parent="BaseCircularButton">
+        <item name="android:background">@drawable/orange_button</item>
+    </style>
 </resources>
